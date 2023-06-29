@@ -10,8 +10,6 @@
                         <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="ícone de search">
                     </button>
                 </form>
-                <input class="busca__input" type="text" placeholder="O que você procura?">
-                <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="ícone de search">
             </div>
         </div>
     </header>
@@ -19,8 +17,8 @@
         <section class="menu-lateral">
             <nav class="menu-lateral__navegacao">
                 <a href="{% url 'index' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
-                <a href="#"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Mais vistas</a>
-                <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
-                <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
+                <a href="{% url 'login'%}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Login</a>
+                <a href="{% url 'cadastro'%}"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Cadastro</a>
+                <a href=""><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
             </nav>
         </section>
