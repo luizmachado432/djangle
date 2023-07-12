@@ -40,9 +40,6 @@ def cadastro(request):
     if request.method == 'POST':
         form= cadastroForms(request.POST)
 
-        if form["senha_1"].value() != form["senha_2"].value():
-            messages.error(request, "Senhas sao diferentes bobo")
-            return redirect('cadastro')
         
     
         if form.is_valid():
