@@ -10,10 +10,10 @@
                 <section class="tags">
                     <p class="tags__titulo">Busque por tags:</p>
                     <ul class="tags__lista">
-                        <li class="tags__tag">engraçada</li>
-                        <li class="tags__tag">cientifica</li>
-                        <li class="tags__tag">assustadora</li>
-                        <li class="tags__tag">badass</li>
+                        <li class="tags__tag"><a href="{%url 'filtro' 'ENGRAÇADA'%}" class="btn" slyle="color: #c9c9c9;">engraçada</a></li>
+                        <li class="tags__tag"><a href="{%url 'filtro' 'CIENTIFICA'%}" class="btn" slyle="color: #c9c9c9;">cientifica</a></li>
+                        <li class="tags__tag"><a href="{%url 'filtro' 'ASSUSTADORA'%}" class="btn" slyle="color: #c9c9c9;">assustadora</a></li>
+                        <li class="tags__tag"><a href="{%url 'filtro' 'BADASS'%}" class="btn" slyle="color: #c9c9c9;">badass</a></li>
                     </ul>
                 </section>
                 <section class="galeria">
@@ -30,7 +30,7 @@
                                     <img class="card__imagem" src="{{ fotografia.foto.url }}" alt="foto">
                                 {% endif %}
                                 </a>
-                                <span class="card__tag">engraçada</span>
+                                <!--<span class="card__tag"></span>-->
                                 <div class="card__info">
                                     <p class="card__titulo">{{ fotografia.nome }}</p>
                                     <div class="card__texto">
